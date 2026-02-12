@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+⭐ Smart Bookmark Manager
 
-## Getting Started
+A full-stack bookmark management application that allows users to securely save, view, and manage bookmarks with real-time synchronization across multiple browser tabs.
 
-First, run the development server:
+🚀 Live Demo
 
-```bash
+👉 https://smart-bookmark-ep6j9tonu-shivani-koonas-projects.vercel.app
+
+📂 GitHub Repository
+
+👉 https://github.com/ShivaniKoona26/smart-bookmark-app
+
+✨ Features
+
+🔐 Google OAuth Authentication (Supabase Auth)
+
+📌 Add, view, and delete bookmarks
+
+⚡ Real-time sync across browser tabs
+
+🧑‍💻 User-specific bookmark storage
+
+📱 Responsive UI
+
+☁️ Fully deployed on Vercel
+
+🛠️ Tech Stack
+Frontend
+
+Next.js (App Router)
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Backend / Database
+
+Supabase (PostgreSQL)
+
+Supabase Realtime
+
+Supabase Auth
+
+Deployment
+
+Vercel
+🧩 Architecture Overview
+User → Next.js Frontend → Supabase Auth → PostgreSQL Database
+                                  ↓
+                           Supabase Realtime
+⚙️ Local Setup Instructions
+1️⃣ Clone Repository
+git clone https://github.com/ShivaniKoona26/smart-bookmark-app.git
+cd smart-bookmark-app
+2️⃣ Install Dependencies
+npm install
+3️⃣ Setup Environment Variables
+Create .env.local
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+4️⃣ Run Application
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧪 How To Use
+Login using Google
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Add bookmark URL + title
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+View bookmarks instantly
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open app in multiple tabs to see realtime updates
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Delete bookmarks anytime
